@@ -1,20 +1,20 @@
 # Tsoy Artem #
 
 ### Contacts: ###
-- WhatsApp, Telegram: +77079818216</br>
-- Instagram: [@tsoyken](https://www.instagram.com/tsoyken/])</br>
+- WhatsApp, Telegram: +77079818216
+- Instagram: [@tsoyken](https://www.instagram.com/tsoyken/])
 - Discord: S-Selfish
 
 ### About me: ###
-- 19 years old </br>
-- Studying at KarU university </br>
-- I came here to upgrade my skills in Js </br>
+- 19 years old 
+- Studying at KarU university 
+- I came here to upgrade my skills in Js 
 
 ### Skills: ###
-- Html</br>
-- Css</br>
-- Js basics</br>
-- GitHub</br>
+- Html
+- Css
+- Js basics
+- GitHub
 
 ### IDE: ###
 - VS code
