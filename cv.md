@@ -19,11 +19,21 @@
 ### IDE: ###
 - VS code
 
-### Work experience: ###
-- none
+### Code example: ###
+##### Task from CodeWars: It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters. ######
+<pre>
+function removeChar(str){
+   let newStr = str.split('');
+   newStr.shift();
+   newStr.pop();
+   return str = newStr.join('');
+};
+</pre>
 
 ### Education: ###
 - 2nd grade of KarU university
 
-### English: ###
-- A2 - B1 level
+### Language: ###
+- English: B1 level
+- Russian: Native
+- Kazakh: A2 level
