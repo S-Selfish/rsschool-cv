@@ -36,4 +36,3 @@ function removeChar(str){
 ### Language: ###
 - English: B1 level
 - Russian: Native
-- Kazakh: A2 level
