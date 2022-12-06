@@ -1,1 +1,2 @@
-git checkout -b gh-pages# rsschool-cv
+# rsschool-cv
+
