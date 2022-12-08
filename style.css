@@ -1,4 +1,391 @@
+/*Минимальное обнуление*/
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
 body {
-    background-color: brown;
-    color:white;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Основной код*/
+html,
+body {
+    height: 100vh;
+    color: var(--main-color-text);
+    margin: 0;
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Sulphur Point', sans-serif; */
+    font-weight: 400;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color-orange: #d88736;
+    --sub-color-purple: #200f49;
+    --main-color-text: #424242;
+    --caption-color-text: #242732;
+    --scroll-up-color: #c7c7c7;
+    --header-color-link: #f0f0f0;
+    --header-color-text: #bdbdbd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--caption-color-text);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h3~img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.h3-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-color-orange);
+    opacity: .3;
+    margin: 10px 0px 40px 0px;
+}
+
+.year {
+    position: relative;
+    left: 25px;
+    color: #a0a0a0;
+}
+
+.year::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color-orange);
+    opacity: .6;
+    position: absolute;
+    left: -25px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    background-color: var(--sub-color-purple);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--header-color-text);
+}
+
+.header__nav {
+    margin: 0;
+    height: inherit;
+    color: inherit;
+}
+
+.header__list {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+    color: inherit;
+}
+
+.header__item {
+    list-style-type: none;
+    padding: 0px 10px;
+    display: inline-block;
+    color: inherit;
+}
+
+.header__link {
+    color: inherit;
+    position: relative;
+    --before-width-before: 0px;
+    transition: --before-width-before 5s ease-in-out;
+}
+
+
+.header__link::before {
+    content: '';
+    width: var(--before-width-before);
+    height: 2px;
+    background-color: var(--header-color-link);
+    position: absolute;
+    bottom: -5px;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.main__content {
+    max-width: 55%;
+}
+
+.main__wrapper {
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__profile-block {
+    background-color: var(--caption-color-text);
+    width: 80px;
+    height: 300px;
+}
+
+.main__profile-image {
+    height: 300px;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.main__profile-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.main__profile-description {
+    margin-top: 50px;
+}
+
+.main__profile-name h2 {
+    font-size: 80px;
+}
+
+.main__profile-name h1 {
+    font-size: 120px;
+    color: var(--main-color-orange);
+}
+
+.main__profile-text {
+    margin-top: 50px;
+    text-transform: none;
+}
+
+
+
+.main__aside {
+    max-width: 40%;
+    flex: 1;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-block {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-text {
+    margin-bottom: 15px;
+}
+
+.main__aside-education {
+    margin-top: 50px;
+}
+
+.education__block {
+    margin-bottom: 50px;
+}
+
+.main__work-experience {
+    margin-top: 30px;
+}
+
+.work__place {
+    margin: 10px 0px;
+}
+
+.work__position {
+    margin: 10px 0px 20px 0px;
+}
+
+.work__position-text {
+    margin-bottom: 30px;
+}
+
+.skill__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill__block h5 {
+    margin-left: 20px;
+}
+
+.skill__block img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.skill__block-img {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer {
+    height: 100px;
+    background-color: var(--sub-color-purple);
+    color: var(--header-color-text)
+}
+
+
+
+
+
+
+
+
+.scroll-up-btn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 10%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--scroll-up-color);
+    opacity: 0;
+    transition: opacity .4s ease-out;
+    cursor: pointer;
+    color: black;
+}
+
+.work__place {
+    color: #828282;
+    text-transform: uppercase;
+}
+
+.scroll-up-btn__active {
+    opacity: .5;
 }

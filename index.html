@@ -1,13 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!--Shrifts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Sulphur+Point:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <title>Hello</title>
 </head>
+
 <body>
-    Hello, it works;
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#contact" class="header__link">Contact</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#education" class="header__link">Education</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#skill" class="header__link">Skills</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#hobby" class="header__link">Hobbies</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#experience" class="header__link">Work experience </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__wrapper">
+                <section class="main__content">
+                    <div class="main__profile">
+                        <div class="main__img">
+                            <div class="main__profile-block"></div>
+                            <div class="main__profile-image">
+                                <img src="./images/cypher.jpg" alt="profile-photo">
+                            </div>
+                        </div>
+
+
+                        <div class="main__profile-description">
+                            <div class="main__profile-name">
+                                <h1>Artyom</h1>
+                                <h2>Choi</h2>
+                            </div>
+                            <div class="main__profile-subtitle">
+                                <h4>Front-end trainee & Student</h4>
+                            </div>
+                            <div class="line"></div>
+                            <div class="main__profile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dicta, doloribus? Quod dicta nesciunt nulla inventore, perferendis numquam accusamus
+                                cupiditate, tempore temporibus voluptatum debitis laudantium, dolorem corrupti
+                                consequuntur quisquam? Dicta, voluptatum! Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Neque sit obcaecati perferendis reiciendis. Dolorem velit commodi
+                                quod! At repudiandae consequatur molestias saepe illo excepturi numquam facilis? Eveniet
+                                eaque voluptatum cum!</div>
+                        </div>
+                    </div>
+
+                    <div class="main__work-experience">
+                        <h3 id="experience">Work Experience</h3>
+                        <div class="line"></div>
+                        <div class="work-experience__block">
+                            <!--There must be an education year, that's not a mistake-->
+                            <div class="year">2015-2016</div>
+                            <div class="work__place">My home</div>
+                            <div class="work__position">
+                                <h4>Engineer</h4>
+                            </div>
+                            <div class="work__position-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Delectus blanditiis dolor corporis, quam, laborum laudantium totam est excepturi ducimus
+                                qui sed saepe, ullam optio ipsa error nobis maxime repudiandae atque.</div>
+                        </div>
+                        <div class="work-experience__block">
+                            <!--There must be an education year, that's not a mistake-->
+                            <div class="year">2015-2016</div>
+                            <div class="work__place">My home</div>
+                            <div class="work__position">
+                                <h4>Engineer</h4>
+                            </div>
+                            <div class="work__position-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Delectus blanditiis dolor corporis, quam, laborum laudantium totam est excepturi ducimus
+                                qui sed saepe, ullam optio ipsa error nobis maxime repudiandae atque.</div>
+                        </div>
+                        <div class="work-experience__block">
+                            <!--There must be an education year, that's not a mistake-->
+                            <div class="year">2015-2016</div>
+                            <div class="work__place">My home</div>
+                            <div class="work__position">
+                                <h4>Engineer</h4>
+                            </div>
+                            <div class="work__position-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Delectus blanditiis dolor corporis, quam, laborum laudantium totam est excepturi ducimus
+                                qui sed saepe, ullam optio ipsa error nobis maxime repudiandae atque.</div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <aside class="main__aside">
+                    <div class="main__aside-contact">
+                        <div class="h3-wrapper">
+                            <h3 id="contact">Contact</h3>
+                            <img src="./images/icon-anchor.png" alt="anchor">
+                        </div>
+
+                        <div class="line"></div>
+
+                        <ul class="contact">
+                            <li class="contact-block">
+                                <img src="./images/email.png" alt="Gmail">
+                                <div class="contact-text">
+                                    <a href="mailto:artemushkats@gmail.com" target="_blank">
+                                        Gmail: artemushkats@gmail.com
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/instagram.png" alt="Instagram">
+                                <div class="contact-text">
+                                    <a href="https://www.instagram.com/tsoyken/" target="_blank">
+                                        Instagram: @tsoyken
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/old-telephone-ringing.png" alt="Phone number">
+                                <div class="contact-text">
+                                    <a href="tel:+77079818216" target="_blank">
+                                        Phone number: +7(707)981-82-16
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/comment.png" alt="Social media">
+                                <div class="contact-text">
+                                    <a href="https://wa.me/+77079818216" target="_blank">
+                                        WhatsApp: +7(707)981-82-16
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/comment.png" alt="Social media">
+                                <div class="contact-text">
+                                    <a href="https://t.me/+77079818216" target="_blank">
+                                        Telegram: +7(707)981-82-16
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="main__aside-education">
+                        <div class="h3-wrapper">
+                            <h3 id="education">Education</h3>
+                            <img src="./images/icon-anchor.png" alt="anchor">
+                        </div>
+
+
+                        <div class="line"></div>
+
+
+                        <div class="education-description">
+                            <div class="education__block">
+                                <div class="education__title">
+                                    <h5>Information technology</h5>
+                                </div>
+                                <div class="education__time-line">
+                                    <div class="year">2008-2019</div>
+                                </div>
+                                <div class="education__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nostrum, at quae? Quo fugiat dolorem facere voluptas, incidunt in vero unde a quam
+                                    reprehenderit eveniet voluptate aspernatur sint beatae, sequi atque!</div>
+                            </div>
+
+
+                            <div class="education__block">
+                                <div class="education__title">
+                                    <h5>Information technology</h5>
+                                </div>
+                                <div class="education__time-line">
+                                    <div class="year">2019-2020</div>
+                                </div>
+                                <div class="education__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Natus sequi nihil, amet unde in, dolorum minus libero explicabo laudantium similique
+                                    quas eius error, quibusdam facilis. Consectetur dolores mollitia adipisci tempore!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="aside__skill">
+                        <div class="skill-description">
+                            <h3 id="skill">Skills</h3>
+                            <div class="line"></div>
+                            
+                            <div class="skill__block">
+                                <h5>JavaScript</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+                            
+                            <div class="skill__block">
+                                <h5>Html</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Css</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Git</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Figma</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside__hobby">
+                        <div class="hobby-description">
+                            <h3 id="hobby">Hobby</h3>
+                            <div class="line"></div>
+                            <div class="hobby__block-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, sunt. Id, debitis perferendis tempora aliquid ab error provident at voluptas et distinctio, cumque quibusdam minus repellat incidunt neque praesentium repudiandae.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, rem asperiores. Numquam culpa eveniet reiciendis ipsam dolores mollitia ullam tempore, consequatur doloremque nemo distinctio quis eos tenetur quas pariatur omnis.
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer class="footer">
+            Icons had been taken from https://www.flaticon.com/ru/
+        </footer>
+        <button class="scroll-up-btn">
+            Scroll up
+        </button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
