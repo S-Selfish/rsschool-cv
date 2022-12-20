@@ -37,6 +37,9 @@
                     <li class="header__item">
                         <a href="#experience" class="header__link">Work experience </a>
                     </li>
+                    <li class="header__item">
+                        <a href="#code" class="header__link">Code example </a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -60,52 +63,62 @@
                             <div class="main__profile-subtitle">
                                 <h4>Front-end trainee & Student</h4>
                             </div>
-                            <div class="line"></div>
-                            <div class="main__profile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Dicta, doloribus? Quod dicta nesciunt nulla inventore, perferendis numquam accusamus
-                                cupiditate, tempore temporibus voluptatum debitis laudantium, dolorem corrupti
-                                consequuntur quisquam? Dicta, voluptatum! Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Neque sit obcaecati perferendis reiciendis. Dolorem velit commodi
-                                quod! At repudiandae consequatur molestias saepe illo excepturi numquam facilis? Eveniet
-                                eaque voluptatum cum!</div>
+
+                            <div class="main__profile-text">My name is Artem, and I've definetely understood what I should do in my life:<br> 1) Make money.<br> 2) Learn programming to make money.<br> 3) Programming is funny thing.(It's not an action, but it's fact);
+                            </div>
                         </div>
                     </div>
 
                     <div class="main__work-experience">
-                        <h3 id="experience">Work Experience</h3>
-                        <div class="line"></div>
+                        <div id="experience">
+                            <h3 class="hover-h3">Not work but also experience</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
+                        </div>
+
+
                         <div class="work-experience__block">
                             <!--There must be an education year, that's not a mistake-->
-                            <div class="year">2015-2016</div>
+                            <div class="year">2003-2020</div>
                             <div class="work__place">My home</div>
                             <div class="work__position">
-                                <h4>Engineer</h4>
+                                <h4>Lazy person</h4>
                             </div>
-                            <div class="work__position-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Delectus blanditiis dolor corporis, quam, laborum laudantium totam est excepturi ducimus
-                                qui sed saepe, ullam optio ipsa error nobis maxime repudiandae atque.</div>
+                            <div class="work__position-text">
+                                I were very lazy. So I didn't work. I spent all my time on playing computer games and communicating with friends.. . In 2020 I had been studied for 1 semester in LETI (Saint Petersburg Electrotechnical University). I were veery very lazy, so I were fired.
+                            </div>
                         </div>
                         <div class="work-experience__block">
                             <!--There must be an education year, that's not a mistake-->
-                            <div class="year">2015-2016</div>
+                            <div class="year">2020-NOW</div>
                             <div class="work__place">My home</div>
                             <div class="work__position">
-                                <h4>Engineer</h4>
+                                <h4>Not Lazy person</h4>
                             </div>
-                            <div class="work__position-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Delectus blanditiis dolor corporis, quam, laborum laudantium totam est excepturi ducimus
-                                qui sed saepe, ullam optio ipsa error nobis maxime repudiandae atque.</div>
+                            <div class="work__position-text">I`m the strongest ninja you have ever seen. I sleep 2 seconds a day, work 25/8, I eat hard granite of science, and think about improving myself all the time. </div>
                         </div>
-                        <div class="work-experience__block">
-                            <!--There must be an education year, that's not a mistake-->
-                            <div class="year">2015-2016</div>
-                            <div class="work__place">My home</div>
-                            <div class="work__position">
-                                <h4>Engineer</h4>
+                    </div>
+                    <div class="code-example">
+                        <div id="code">
+                            <h3 class="hover-h3">Code example</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
                             </div>
-                            <div class="work__position-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Delectus blanditiis dolor corporis, quam, laborum laudantium totam est excepturi ducimus
-                                qui sed saepe, ullam optio ipsa error nobis maxime repudiandae atque.</div>
+                        </div>
+                        <div class="code-example__block">
+                            Task from CodeWars: It`s pretty straightforward. Your goal is to create a function that
+                            removes the first and last characters of a string. You`re given one parameter, the original
+                            string. You don`t have to worry with strings with less than two characters:
+                            <pre>
+function removeChar(str){
+    let newStr = str.split('');
+    newStr.shift();
+    newStr.pop();
+    return str = newStr.join('');
+};</pre>
                         </div>
                     </div>
                 </section>
@@ -113,12 +126,13 @@
 
                 <aside class="main__aside">
                     <div class="main__aside-contact">
-                        <div class="h3-wrapper">
-                            <h3 id="contact">Contact</h3>
-                            <img src="./images/icon-anchor.png" alt="anchor">
+                        <div id="contact">
+                            <h3 class="hover-h3">Contact</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
                         </div>
-
-                        <div class="line"></div>
 
                         <ul class="contact">
                             <li class="contact-block">
@@ -167,40 +181,41 @@
                     </div>
 
                     <div class="main__aside-education">
-                        <div class="h3-wrapper">
-                            <h3 id="education">Education</h3>
-                            <img src="./images/icon-anchor.png" alt="anchor">
+                        <div id="education">
+                            <h3 class="hover-h3">Education</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
                         </div>
 
 
-                        <div class="line"></div>
+
 
 
                         <div class="education-description">
                             <div class="education__block">
                                 <div class="education__title">
-                                    <h5>Information technology</h5>
+                                    <h5>School №5 - School №66</h5>
                                 </div>
                                 <div class="education__time-line">
-                                    <div class="year">2008-2019</div>
+                                    <div class="year">2008-2016  -  2017-2020</div>
                                 </div>
-                                <div class="education__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Nostrum, at quae? Quo fugiat dolorem facere voluptas, incidunt in vero unde a quam
-                                    reprehenderit eveniet voluptate aspernatur sint beatae, sequi atque!</div>
+                                <div class="education__text">
+                                    There were only two places on planet Earth that I hated the most... The village toilet and School №5. The reason why I hate them: <br>
+                                    It always smelled. In the bathroom it was human needs, in the school it was bad people.
+                                </div>
                             </div>
 
 
                             <div class="education__block">
                                 <div class="education__title">
-                                    <h5>Information technology</h5>
+                                    <h5>Information technology by myself</h5>
                                 </div>
                                 <div class="education__time-line">
-                                    <div class="year">2019-2020</div>
+                                    <div class="year">2020-NOW</div>
                                 </div>
-                                <div class="education__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Natus sequi nihil, amet unde in, dolorum minus libero explicabo laudantium similique
-                                    quas eius error, quibusdam facilis. Consectetur dolores mollitia adipisci tempore!
-                                </div>
+                                <div class="education__text">I like it.</div>
                             </div>
                         </div>
                     </div>
@@ -208,9 +223,15 @@
 
                     <div class="aside__skill">
                         <div class="skill-description">
-                            <h3 id="skill">Skills</h3>
-                            <div class="line"></div>
-                            
+                            <div id="skill">
+                                <h3 class="hover-h3">Skills</h3>
+                                <div class="line-wrapper">
+                                    <div class="line"></div>
+                                    <div class="line-active"></div>
+                                </div>
+                            </div>
+
+
                             <div class="skill__block">
                                 <h5>JavaScript</h5>
                                 <div class="skill__block-img">
@@ -221,7 +242,7 @@
                                     <img src="./images/star-outline.png" alt="star-outline">
                                 </div>
                             </div>
-                            
+
                             <div class="skill__block">
                                 <h5>Html</h5>
                                 <div class="skill__block-img">
@@ -229,7 +250,7 @@
                                     <img src="./images/star.png" alt="star">
                                     <img src="./images/star.png" alt="star">
                                     <img src="./images/star.png" alt="star">
-                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star.png" alt="star-outline">
                                 </div>
                             </div>
 
@@ -239,7 +260,7 @@
                                     <img src="./images/star.png" alt="star">
                                     <img src="./images/star.png" alt="star">
                                     <img src="./images/star.png" alt="star">
-                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star.png" alt="star-outline">
                                     <img src="./images/star-outline.png" alt="star-outline">
                                 </div>
                             </div>
@@ -269,11 +290,17 @@
                     </div>
                     <div class="aside__hobby">
                         <div class="hobby-description">
-                            <h3 id="hobby">Hobby</h3>
-                            <div class="line"></div>
+                            <div id="hobby">
+                                <h3 class="hover-h3">Hobby</h3>
+                                <div class="line-wrapper">
+                                    <div class="line"></div>
+                                    <div class="line-active"></div>
+                                </div>
+                            </div>
+
                             <div class="hobby__block-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, sunt. Id, debitis perferendis tempora aliquid ab error provident at voluptas et distinctio, cumque quibusdam minus repellat incidunt neque praesentium repudiandae.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, rem asperiores. Numquam culpa eveniet reiciendis ipsam dolores mollitia ullam tempore, consequatur doloremque nemo distinctio quis eos tenetur quas pariatur omnis.
+                                My hobbies are dancing and singing. BlaBlaBla
+
                             </div>
                         </div>
                     </div>

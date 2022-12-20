@@ -123,12 +123,6 @@ h3~img {
     display: inline-block;
 }
 
-.h3-wrapper {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
 h4 {
     font-size: 20px;
 }
@@ -138,12 +132,54 @@ h5 {
     color: #4f4f4f;
 }
 
+.line-wrapper{
+    width: 100%;
+    margin: 10px 0px 40px 0px;
+    position: relative;
+}
+
 .line {
     width: 100%;
     height: 5px;
     background-color: var(--main-color-orange);
     opacity: .3;
-    margin: 10px 0px 40px 0px;
+}
+
+.line-active {
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--main-color-orange);
+    z-index: 500;
+    top:0;
+    animation: unset;
+}
+
+pre {
+    background-color: #cfcece;
+    /* box-shadow: inset 0px 0px 1px #bdbcbc; */
+    border: 1px solid #bdbcbc;
+    display:flex;
+    font-size: 20px;
+}
+@keyframes line-animation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes line-animation-reverse {
+    from {
+        width: 40%;
+    }
+
+    to {
+        width: 0%;
+    }
 }
 
 .year {
@@ -267,7 +303,7 @@ h5 {
 }
 
 .main__profile-name h1 {
-    font-size: 120px;
+    font-size: 100px;
     color: var(--main-color-orange);
 }
 
@@ -364,6 +400,8 @@ h5 {
 
 
 
+
+
 .scroll-up-btn {
     position: fixed;
     right: 0;
@@ -376,7 +414,7 @@ h5 {
     justify-content: center;
     background-color: var(--scroll-up-color);
     opacity: 0;
-    transition: opacity .4s ease-out;
+    transition: opacity .3s ease-out;
     cursor: pointer;
     color: black;
 }
