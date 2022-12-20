@@ -393,7 +393,9 @@ pre {
     color: var(--header-color-text)
 }
 
-
+.footer__logo {
+    width: 5%;
+}
 
 
 
