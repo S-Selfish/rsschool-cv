@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Shrifts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Sulphur+Point:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Hello</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#contact" class="header__link">Contact</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#education" class="header__link">Education</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#skill" class="header__link">Skills</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#hobby" class="header__link">Hobbies</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#experience" class="header__link">Work experience </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#code" class="header__link">Code example </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__wrapper">
+                <section class="main__content">
+                    <div class="main__profile">
+                        <div class="main__img">
+                            <div class="main__profile-block"></div>
+                            <div class="main__profile-image">
+                                <img src="./images/cypher.jpg" alt="profile-photo">
+                            </div>
+                        </div>
+
+
+                        <div class="main__profile-description">
+                            <div class="main__profile-name">
+                                <h1>Artyom</h1>
+                                <h2>Choi</h2>
+                            </div>
+                            <div class="main__profile-subtitle">
+                                <h4>Front-end trainee & Student</h4>
+                            </div>
+
+                            <div class="main__profile-text">My name is Artem, and I've definetely understood what I
+                                should do in my life:<br> 1) Make money.<br> 2) Learn programming to make money.<br> 3)
+                                Programming is funny thing.(It's not an action, but it's fact);
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main__work-experience">
+                        <div id="experience">
+                            <h3 class="hover-h3">Not work but also experience</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="work-experience__block">
+                            <!--There must be an education year, that's not a mistake-->
+                            <div class="year">2003-2020</div>
+                            <div class="work__place">My home</div>
+                            <div class="work__position">
+                                <h4>Lazy person</h4>
+                            </div>
+                            <div class="work__position-text">
+                                I were very lazy. So I didn't work. I spent all my time on playing computer games and
+                                communicating with friends.. . In 2020 I had been studied for 1 semester in LETI (Saint
+                                Petersburg Electrotechnical University). I were veery very lazy, so I were fired.
+                            </div>
+                        </div>
+                        <div class="work-experience__block">
+                            <!--There must be an education year, that's not a mistake-->
+                            <div class="year">2020-NOW</div>
+                            <div class="work__place">My home</div>
+                            <div class="work__position">
+                                <h4>Not Lazy person</h4>
+                            </div>
+                            <div class="work__position-text">I`m the strongest ninja you have ever seen. I sleep 2
+                                seconds a day, work 25/8, I eat hard granite of science, and think about improving
+                                myself all the time. </div>
+                        </div>
+                    </div>
+                    <div class="code-example">
+                        <div id="code">
+                            <h3 class="hover-h3">Code example</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
+                        </div>
+                        <div class="code-example__block">
+                            Task from CodeWars: It`s pretty straightforward. Your goal is to create a function that
+                            removes the first and last characters of a string. You`re given one parameter, the original
+                            string. You don`t have to worry with strings with less than two characters:
+                            <pre>
+function removeChar(str){
+    let newStr = str.split('');
+    newStr.shift();
+    newStr.pop();
+    return str = newStr.join('');
+};</pre>
+                        </div>
+                    </div>
+                </section>
+
+
+                <aside class="main__aside">
+                    <div class="main__aside-contact">
+                        <div id="contact">
+                            <h3 class="hover-h3">Contact</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
+                        </div>
+
+                        <ul class="contact">
+                            <li class="contact-block">
+                                <img src="./images/email.png" alt="Gmail">
+                                <div class="contact-text">
+                                    <a href="mailto:artemushkats@gmail.com" target="_blank">
+                                        Gmail: artemushkats@gmail.com
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/instagram.png" alt="Instagram">
+                                <div class="contact-text">
+                                    <a href="https://www.instagram.com/tsoyken/" target="_blank">
+                                        Instagram: @tsoyken
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/old-telephone-ringing.png" alt="Phone number">
+                                <div class="contact-text">
+                                    <a href="tel:+77079818216" target="_blank">
+                                        Phone number: +7(707)981-82-16
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/comment.png" alt="Social media">
+                                <div class="contact-text">
+                                    <a href="https://wa.me/+77079818216" target="_blank">
+                                        WhatsApp: +7(707)981-82-16
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="contact-block">
+                                <img src="./images/comment.png" alt="Social media">
+                                <div class="contact-text">
+                                    <a href="https://t.me/+77079818216" target="_blank">
+                                        Telegram: +7(707)981-82-16
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="main__aside-education">
+                        <div id="education">
+                            <h3 class="hover-h3">Education</h3>
+                            <div class="line-wrapper">
+                                <div class="line"></div>
+                                <div class="line-active"></div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="education-description">
+                            <div class="education__block">
+                                <div class="education__title">
+                                    <h5>School №5 - School №66</h5>
+                                </div>
+                                <div class="education__time-line">
+                                    <div class="year">2008-2016 - 2017-2020</div>
+                                </div>
+                                <div class="education__text">
+                                    There were only two places on planet Earth that I hated the most... The village
+                                    toilet and School №5. The reason why I hate them: <br>
+                                    It always smelled. In the bathroom it was human needs, in the school it was bad
+                                    people.
+                                </div>
+                            </div>
+
+
+                            <div class="education__block">
+                                <div class="education__title">
+                                    <h5>Information technology by myself</h5>
+                                </div>
+                                <div class="education__time-line">
+                                    <div class="year">2020-NOW</div>
+                                </div>
+                                <div class="education__text">I like it.</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="aside__skill">
+                        <div class="skill-description">
+                            <div id="skill">
+                                <h3 class="hover-h3">Skills</h3>
+                                <div class="line-wrapper">
+                                    <div class="line"></div>
+                                    <div class="line-active"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="skill__block">
+                                <h5>JavaScript</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Html</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Css</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Git</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+
+                            <div class="skill__block">
+                                <h5>Figma</h5>
+                                <div class="skill__block-img">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star.png" alt="star">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                    <img src="./images/star-outline.png" alt="star-outline">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside__hobby">
+                        <div class="hobby-description">
+                            <div id="hobby">
+                                <h3 class="hover-h3">Hobby</h3>
+                                <div class="line-wrapper">
+                                    <div class="line"></div>
+                                    <div class="line-active"></div>
+                                </div>
+                            </div>
+
+                            <div class="hobby__block-text">
+                                My hobbies are dancing and singing. BlaBlaBla
+
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer class="footer">
+            Icons had been taken from <a href="https://www.flaticon.com/ru/">https://www.flaticon.com/ru/</a>
+            <div class="footer__description">
+                <div class="footer__logo">
+                    <a href="https://app.rs.school/" target="_blank">
+                        <img src="https://rs.school/images/rs_school_js.svg" alt="Logo Rs school">
+                    </a>
+                </div>
+                <br>
+                GitHub: <a href="https://github.com/S-Selfish">S-Selfish</a>
+            </div>
+
+
+        </footer>
+        <button class="scroll-up-btn">
+            Scroll up
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
